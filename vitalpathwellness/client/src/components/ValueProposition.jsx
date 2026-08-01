@@ -16,8 +16,7 @@ const ValueProposition = () => {
   return (
     <section
       id="value"
-      className="py-24 lg:py-32 px-6 lg:px-16 bg-gradient-to-r from-green-100 to-blue-200"
-    >
+      className="py-24 lg:py-32 px-6 lg:px-16 bg-gradient-to-r from-green-100 to-blue-200">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
 
         {/* Left Side */}
@@ -57,9 +56,7 @@ const ValueProposition = () => {
           </div>
 
           {/* Quote */}
-
           <div className="mt-6 pl-6">
-
             <p className="italic text-lg leading-9 text-text">
               Our interventions integrate global wellness best practices with
               practical, locally relevant, evidence-based solutions that
@@ -71,20 +68,15 @@ const ValueProposition = () => {
         </div>
 
         {/* Right Side */}
-
         <div className="flex justify-center">
-
           <img
             src={valueImage}
             alt="Employee Wellness"
             className="w-full max-w-xl h-[600px] object-cover rounded-[32px] shadow-xl"
           />
-
         </div>
-
       </div>
     </section>
   );
 };
-
 export default ValueProposition;
