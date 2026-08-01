@@ -1,11 +1,11 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
 
 const HomePage = () => {
   return (
-    <div>
-      Vital Path Wellness Consultancy
-    </div> 
+    <>
+      <Navbar/>
+    </>
   )
 }
-
 export default HomePage

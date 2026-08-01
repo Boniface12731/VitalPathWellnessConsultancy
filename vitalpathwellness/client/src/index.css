@@ -1,12 +1,63 @@
-
-@import url('https://fonts.googleapis.com/css?family=Outfit: wght@100..900& display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
 @import "tailwindcss";
 
-*{
-    font-family: "Outfit", sans-serif;
+:root {
+  --primary: #0D6B47;
+  --primary-light: #E8F5EE;
+  --accent: #D4AF37;
+
+  --background: #FAFAF8;
+
+  --text: #1A1A1A;
+  --text-light: #666666;
+
+  --card-radius: 24px;
 }
 
-::-webkit-scrollbar{
-display: none;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+section {
+  width: 100%;
+  padding: 6rem 8%;
+}
+
+@theme {
+  --color-primary: #0D6B47;
+  --color-primary-light: #E8F5EE;
+  --color-accent: #D4AF37;
+  --color-background: #FAFAF8;
+  --color-text: #1A1A1A;
+  --color-text-light: #666666;
+}
+
