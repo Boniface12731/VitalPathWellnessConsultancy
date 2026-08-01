@@ -5,6 +5,10 @@
 :root {
   --primary: #0D6B47;
   --primary-light: #E8F5EE;
+
+  --secondary: #0055A5;
+  --secondary-light: #EAF4FF;
+
   --accent: #D4AF37;
 
   --background: #FAFAF8;
@@ -55,8 +59,14 @@ section {
 @theme {
   --color-primary: #0D6B47;
   --color-primary-light: #E8F5EE;
+
+  --color-secondary: #0055A5;
+  --color-secondary-light: #EAF4FF;
+
   --color-accent: #D4AF37;
+
   --color-background: #FAFAF8;
+
   --color-text: #1A1A1A;
   --color-text-light: #666666;
 }

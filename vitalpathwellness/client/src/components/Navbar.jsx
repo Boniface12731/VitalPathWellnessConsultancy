@@ -85,7 +85,7 @@ const Navbar = () => {
         items-center justify-center
         min-w-[200px]
         h-12
-        bg-primary
+        bg-gradient-to-r from-primary to-secondary
         text-white
         font-semibold
         rounded-full
