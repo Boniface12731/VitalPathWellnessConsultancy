@@ -23,9 +23,7 @@ const VisionMission = () => {
 
           {/* Cards */}
           <div className="flex flex-col gap-10">
-
             {/* Vision */}
-
             <div
               className="
                 bg-white
@@ -65,7 +63,6 @@ const VisionMission = () => {
             </div>
 
             {/* Mission */}
-
             <div
               className="
                 bg-white
@@ -105,8 +102,47 @@ const VisionMission = () => {
               </div>
             </div>
 
-          </div>
 
+             {/* Commitment */}
+            <div
+              className="
+                bg-white
+                rounded-3xl
+                p-8
+                lg:p-10
+                shadow-xl
+                border-l-[8px]
+                border-blue
+                transition-all
+                duration-300
+                hover:-translate-y-1
+                hover:shadow-2xl
+              "
+            >
+              <div className="flex gap-6 items-start">
+
+                <div className="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                  <FiTarget className="text-blue text-3xl" />
+                </div>
+
+                <div>
+
+                  <h3 className="text-3xl font-bold text-blue mb-5">
+                    Our Commitment
+                  </h3>
+
+                  <p className="text-lg leading-9 text-text-light">
+                      AtVitalPath Wellness Consultancy , organizational success starts with healthy
+                      people, and we help clients build resilient workplaces where employees
+                      thrive, leadership is strengthened, and performance is sustained through
+                      comprehensive wellness strategies; success is measured by the lasting impact
+                      we create for clients and the communities they serve
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
 
         {/* RIGHT SIDE */}
