@@ -1,12 +1,28 @@
 import React from "react";
+import {
+  FiSearch,
+  FiEdit3,
+  FiSettings,
+  FiBarChart2,
+} from "react-icons/fi";
 
 const Contact = () => {
+
   return (
     <section
-      id="contact"
-      className="bg-gradient-to-r from-primary via-[#2A9C95] to-secondary py-28 lg:py-36 px-6 lg:px-16"
-    >
-      <div className="max-w-5xl mx-auto text-center text-white">
+      id="consulting"
+       className="
+        min-h-screen
+        py-24
+        lg:py-32
+        px-6
+        lg:px-16
+        bg-gradient-to-r
+        from-green-100
+        via-blue-100
+        to-blue-200">
+
+        <div className="max-w-5xl mx-auto text-center text-black">
 
         {/* Decorative Lines */}
         <div className="flex items-center justify-center gap-6 mb-8">
@@ -26,8 +42,7 @@ const Contact = () => {
             <span className="font-bold">Email:</span>{" "}
             <a
               href="mailto:vitalpathwellness@gmail.com"
-              className="font-normal hover:underline"
-            >
+              className="font-normal hover:underline">
               vitalpathwellness@gmail.com
             </a>
           </div>
@@ -48,8 +63,7 @@ const Contact = () => {
               href="https://www.vitalpathwellness.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-normal hover:underline"
-            >
+              className="font-normal hover:underline">
               www.vitalpathwellness.com
             </a>
           </div>
@@ -68,8 +82,8 @@ const Contact = () => {
 
         </div>
       </div>
+      
     </section>
   );
 };
-
 export default Contact;

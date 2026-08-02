@@ -1,84 +1,132 @@
 import React from "react";
-import gymImage from "../assets/images/hero.jpg"; // Replace with your image
+import { FiCheckCircle } from "react-icons/fi";
+import chooseImage from "../assets/images/stretcher.jpg";
 
 const WhyChooseUs = () => {
-  const leftColumn = [
-    "Tailored consulting solutions",
-    "Evidence-based methodologies",
-    "Experienced wellness professionals",
-    "Strategic partnerships",
-  ];
-
-  const rightColumn = [
-    "Measurable program outcomes",
-    "Flexible delivery models",
-    "Confidential and ethical practice",
-  ];
-
   return (
-    <section id="why-choose-us">
-      {/* Top Image */}
-      <div className="w-full h-[340px] lg:h-[430px] overflow-hidden">
-        <img
-          src={gymImage}
-          alt="Employees exercising"
-          className="w-full h-full object-cover"
-        />
-      </div>
+    <section
+      id="why-choose-us"
+      className="py-24 lg:py-32 bg-gradient-to-r from-green-100 to-blue-200"
+    >
+      <div className="max-w-7xl mx-auto px-6 lg:px-12">
 
-      {/* Content */}
-      <div className="bg-gradient-to-r from-primary via-[#2A9C95] to-secondary py-24 px-6 lg:px-16">
-        <div className="max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-20 items-center">
 
-          {/* Heading */}
-          <h2 className="text-5xl lg:text-6xl font-bold text-white mb-8">
-            Why Choose VitalPath Wellness
-          </h2>
+          {/* Left Side */}
 
-          <p className="text-2xl text-white font-medium leading-10 max-w-5xl mb-10">
-            Our clients value our combination of technical expertise and
-            practical implementation.
-          </p>
+          <div>
+            <h2 className="text-5xl lg:text-6xl font-bold text-text mb-8">
+              Why Choose VitalPath Wellness
+            </h2>
 
-          {/* Badge */}
-          <div className="inline-flex items-center border border-white rounded-xl px-5 py-2 mb-16">
-            <span className="text-white text-3xl font-semibold">
-              We offer:
-            </span>
+            <p className="text-xl leading-10 text-text-light mb-12 max-w-2xl">
+              Our clients value our combination of technical expertise,
+              evidence-based wellness strategies, and practical implementation
+              that delivers measurable organizational impact.
+            </p>
+
+            <div className="text-black px-6 py-3 rounded-full font-semibold text-lg mb-12">
+              We Offer:
+            </div>
+
+            <div className="grid sm:grid-cols-2 gap-x-12 gap-y-8">
+
+              <div className="flex items-start gap-4">
+                <FiCheckCircle
+                  className="text-primary mt-1 flex-shrink-0"
+                  size={26}
+                />
+                <span className="text-lg text-text-light">
+                  Tailored consulting solutions
+                </span>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <FiCheckCircle
+                  className="text-primary mt-1 flex-shrink-0"
+                  size={26}
+                />
+                <span className="text-lg text-text-light">
+                  Measurable program outcomes
+                </span>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <FiCheckCircle
+                  className="text-primary mt-1 flex-shrink-0"
+                  size={26}
+                />
+                <span className="text-lg text-text-light">
+                  Evidence-based methodologies
+                </span>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <FiCheckCircle
+                  className="text-primary mt-1 flex-shrink-0"
+                  size={26}
+                />
+                <span className="text-lg text-text-light">
+                  Flexible delivery models
+                </span>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <FiCheckCircle
+                  className="text-primary mt-1 flex-shrink-0"
+                  size={26}
+                />
+                <span className="text-lg text-text-light">
+                  Experienced wellness professionals
+                </span>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <FiCheckCircle
+                  className="text-primary mt-1 flex-shrink-0"
+                  size={26}
+                />
+                <span className="text-lg text-text-light">
+                  Confidential and ethical practice
+                </span>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <FiCheckCircle
+                  className="text-primary mt-1 flex-shrink-0"
+                  size={26}
+                />
+                <span className="text-lg text-text-light">
+                  Strategic partnerships
+                </span>
+              </div>
+
+            </div>
+
           </div>
 
-          {/* Two Columns */}
-          <div className="grid md:grid-cols-2 gap-24">
+          {/* Right Side */}
 
-            {/* Left */}
-            <ul className="space-y-5">
-              {leftColumn.map((item, index) => (
-                <li
-                  key={index}
-                  className="flex items-start gap-5 text-white text-xl lg:text-2xl leading-9"
-                >
-                  <span className="text-2xl mt-1">•</span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
+          <div className="flex justify-center">
 
-            {/* Right */}
-            <ul className="space-y-5">
-              {rightColumn.map((item, index) => (
-                <li
-                  key={index}
-                  className="flex items-start gap-5 text-white text-xl lg:text-2xl leading-9"
-                >
-                  <span className="text-2xl mt-1">•</span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
+            <img
+              src={chooseImage}
+              alt="Why Choose VitalPath Wellness"
+              className="
+                w-full
+                max-w-2xl
+                h-[500px]
+                lg:h-[650px]
+                object-cover
+                rounded-[40px]
+                shadow-2xl
+              "
+            />
 
           </div>
 
         </div>
+
       </div>
     </section>
   );

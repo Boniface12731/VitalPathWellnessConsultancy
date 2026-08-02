@@ -16,27 +16,27 @@ import ValueProposition from './components/ValueProposition';
 import VisionMission from './components/VisionMission';
 import WhyChooseUs from './components/WhyChooseUs';
 
-
 const App = () => {
   return (
     <div className='bg-gray-200'>
       <Navbar/>
-      <Routes>
-        <Route path='/' element={<HomePage/>}/>
-        <Route path='/login' element={<LoginPage/>}/>
-        <Route path='/profile' element={<ProfilePage/>}/>
-        <Route path="/about" element={<About />}/>
-        <Route path="/commitment" element={<Commitment />}/>
-        <Route path="/consulting-approach" element={<ConsultingApproach />}/>
-        <Route path="/contact" element={<Contact />}/>
-        <Route path="/footer" element={<Footer />} />
-        <Route path="/hero" element={<Hero />} />
-        <Route path="/organizations" element={<Organizations />}/>
-        <Route path="/services" element={<Services />}/>
-        <Route path="/value-proposition" element={<ValueProposition />}/>
-        <Route path="/vision-mission" element={<VisionMission />}/>
-        <Route path="/why-choose-us" element={<WhyChooseUs />}/>
-      </Routes>
+              <Routes>
+                <Route path='/' element={<HomePage/>}/>
+                <Route path='/login' element={<LoginPage/>}/>
+                <Route path='/profile' element={<ProfilePage/>}/>
+                <Route path="/about" element={<About />}/>
+                <Route path="/commitment" element={<Commitment />}/>
+                <Route path="/consulting-approach" element={<ConsultingApproach />}/>
+                <Route path="/contact" element={<Contact />}/>
+                <Route path="/footer" element={<Footer />} />
+                <Route path="/hero" element={<Hero />} />
+                <Route path="/organizations" element={<Organizations />}/>
+                <Route path="/services" element={<Services />}/>
+                <Route path="/value-proposition" element={<ValueProposition />}/>
+                <Route path="/vision-mission" element={<VisionMission />}/>
+                <Route path="/why-choose-us" element={<WhyChooseUs />}/>
+              </Routes>
+       <Footer/>
     </div>
   )
 }
