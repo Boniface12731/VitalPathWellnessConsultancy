@@ -16,13 +16,15 @@ const VisionMission = () => {
           <p className="uppercase tracking-[6px] text-primary font-semibold mb-4">
             Our Purpose
           </p>
+            <br/>
 
           <h2 className="text-5xl lg:text-6xl font-bold text-text mb-14">
             Vision & Mission
           </h2>
+            <br/>
 
           {/* Cards */}
-          <div className="flex flex-col gap-10">
+          <div className="flex flex-col gap-15">
             {/* Vision */}
             <div
               className="

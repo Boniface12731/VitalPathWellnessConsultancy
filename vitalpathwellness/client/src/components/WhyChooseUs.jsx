@@ -18,17 +18,18 @@ const WhyChooseUs = () => {
             <h2 className="text-5xl lg:text-6xl font-bold text-text mb-8">
               Why Choose VitalPath Wellness
             </h2>
-
+                <br/>
             <p className="text-xl leading-10 text-text-light mb-12 max-w-2xl">
               Our clients value our combination of technical expertise,
               evidence-based wellness strategies, and practical implementation
               that delivers measurable organizational impact.
             </p>
-
+            <br/>
             <div className="text-black px-6 py-3 rounded-full font-semibold text-lg mb-12">
               We Offer:
             </div>
 
+              <br/>
             <div className="grid sm:grid-cols-2 gap-x-12 gap-y-8">
 
               <div className="flex items-start gap-4">

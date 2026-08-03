@@ -1,16 +1,15 @@
 import { useState, useEffect } from "react";
 import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
 import logo from "../assets/images/logo.png";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-
-const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Approach", href: "#approach" },
-  { label: "Contact", href: "#contact" },
-];
+    const navLinks = [
+      { label: "Home", href: "/" },
+      { label: "About", href: "#about-section"},
+      { label: "Services", href: "#about-section"},
+      { label: "Approach", href: "#about-section"},
+      { label: "Contact", href: "#about-section"},
+    ];
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -36,15 +35,18 @@ const Navbar = () => {
     <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
       {/* Logo */}
   <div className="flex items-center gap-3">
-    <img
+   <Link to="/">
+      <img
         src={logo}
         alt="VitalPath Logo"
-        className="w-14 h-14 md:w-16 md:h-16"/>
+        className="w-14 h-14 md:w-16 md:h-16 cursor-pointer"
+      />
+  </Link>
     <div>
         <h1 className="text-2xl font-bold text-primary">
             Vital Path
         </h1>
-        <p className="text-xs text-text-light">
+        <p className="text-xs text-secondary">
             Wellness Consultancy
         </p>
     </div>
@@ -80,6 +82,12 @@ const Navbar = () => {
 
     {/* CTA Button */}
     <button
+        onClick={() =>
+              window.open(
+                "https://wa.me/254746620540?text=I%20would%20like%20to%20book%20a%20consultation",
+                "_blank"
+              )
+            }
       className="
         hidden md:flex
         items-center justify-center

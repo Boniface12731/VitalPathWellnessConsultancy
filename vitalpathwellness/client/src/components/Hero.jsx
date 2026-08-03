@@ -1,5 +1,5 @@
 import React from 'react'
-import heroImage from "../assets/images/hero.jpg";
+import heroImage from "../assets/images/wellnessone.png";
 
 const Hero = () => {
   return (
@@ -12,22 +12,70 @@ const Hero = () => {
         {/* Left Side */}
        <div className="lg:pr-8 pt-28 lg:pt-32">
 
-          <h1 className="text-5xl lg:text-6xl font-bold leading-tight text-text">
+          <h1 className="text-5xl lg:text-6xl font-bold leading-tight text-primary">
             VitalPath Wellness Consultancy
           </h1>
 
-          <p className="mt-8 text-lg leading-8 text-text-light">
-            VitalPath Wellness Consultancy is a health and workplace wellness
-            consulting firm that helps organizations strengthen employee
-            well-being, organizational performance, and long-term
-            sustainability.
-            <br />
-            <br />
-            We deliver integrated, evidence-informed wellness solutions that
-            address physical health, mental well-being, occupational health,
-            lifestyle risks, and workplace culture while aligning with each
-            client's strategic objectives and workforce needs.
-          </p>
+          <br/>
+           
+           <h1 className="text-5xl lg:text-6xl font-bold leading-tight text-secondary">
+            Guiding the path to holistic wellbeing
+          </h1>
+          
+          <br/>
+          <br/>
+          <br/>
+          
+        {/*Buttons*/}
+        <div className="flex flex-wrap gap-5">
+            <button
+              onClick={() =>
+                  document
+                    .getElementById("about-section")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
+              className="
+                flex
+                items-center justify-center
+                min-w-[200px]
+                h-12
+                bg-gradient-to-r from-primary to-secondary
+                text-white
+                font-semibold
+                rounded-full
+                shadow-md
+                transition-all duration-300
+                hover:opacity-90
+                hover:scale-105
+                hover:shadow-lg">
+                Our Services
+            </button>
+
+            <button
+              onClick={() =>
+                    window.open(
+                      "https://wa.me/254746620540?text=I%20would%20like%20to%20book%20a%20consultation",
+                      "_blank"
+                    )
+                  }
+              className="
+                flex
+                items-center justify-center
+                min-w-[200px]
+                h-12
+                bg-gradient-to-r from-secondary to-primary
+                text-white
+                font-semibold
+                rounded-full
+                shadow-md
+                transition-all duration-300
+                hover:opacity-90
+                hover:scale-105
+                hover:shadow-lg">
+                Book a Consultation
+            </button>
+        </div>
+
         </div>
 
         {/* Right Side */}
@@ -39,43 +87,7 @@ const Hero = () => {
           />
         </div>
 
-         <div className="mt-8 flex flex-wrap gap-5">
-              <button
-                className="
-                  flex
-                  items-center justify-center
-                  min-w-[200px]
-                  h-12
-                  bg-gradient-to-r from-primary to-secondary
-                  text-white
-                  font-semibold
-                  rounded-full
-                  shadow-md
-                  transition-all duration-300
-                  hover:opacity-90
-                  hover:scale-105
-                  hover:shadow-lg">
-                  Our Services
-              </button>
-
-              <button
-                className="
-                  flex
-                  items-center justify-center
-                  min-w-[200px]
-                  h-12
-                  bg-gradient-to-r from-secondary to-primary
-                  text-white
-                  font-semibold
-                  rounded-full
-                  shadow-md
-                  transition-all duration-300
-                  hover:opacity-90
-                  hover:scale-105
-                  hover:shadow-lg">
-                  Book a Consultation
-              </button>
-         </div>
+        
 
       </div>
     </section>

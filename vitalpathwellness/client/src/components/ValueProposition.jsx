@@ -25,11 +25,11 @@ const ValueProposition = () => {
           <p className="uppercase tracking-[4px] text-primary font-semibold mb-3">
             Why Choose Us
           </p>
-
+              <br/>
           <h2 className="text-4xl lg:text-5xl font-bold text-text mb-8">
             Our Value Proposition
           </h2>
-
+          <br/>
           <p className="text-lg leading-9 text-text-light mb-12">
             At VitalPath Wellness Consultancy, employee wellness is a
             strategic investment—not just a benefit. Our evidence-based
@@ -38,7 +38,7 @@ const ValueProposition = () => {
           </p>
 
           {/* Benefits */}
-
+             <br/>
           <div className="grid sm:grid-cols-2 gap-x-12 gap-y-6 mb-14">
 
             {benefits.map((benefit, index) => (
@@ -54,7 +54,7 @@ const ValueProposition = () => {
             ))}
 
           </div>
-
+          <br/>
           {/* Quote */}
           <div className="mt-6 pl-6">
             <p className="italic text-lg leading-9 text-text">

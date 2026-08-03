@@ -18,11 +18,11 @@ const Organizations = () => {
             <h2 className="text-5xl lg:text-6xl font-bold text-text mb-8">
               Organizations We Serve
             </h2>
-
+                <br/>
             <p className="text-xl leading-10 text-text-light mb-14 max-w-2xl">
               We work across sectors including: 
             </p>
-
+                <br/>
             <div className="grid sm:grid-cols-2 gap-x-12 gap-y-8">
 
               <div className="flex items-start gap-4">

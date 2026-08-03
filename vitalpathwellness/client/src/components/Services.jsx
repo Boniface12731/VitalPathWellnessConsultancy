@@ -49,10 +49,12 @@ const Services = () => {
                 workplace wellness strategies aligned with
                 organizational goals.
              </p>
-   
+             
+             <br/>
             <p className="text-primary font-semibold mt-10">
                Services include:
              </p>
+               <br/>
              {/* our services */}
              <div className="grid sm:grid-cols-2 gap-x-12 gap-y-6 mb-14">
                {services.map((service, index) => (

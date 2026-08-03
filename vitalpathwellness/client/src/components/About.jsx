@@ -11,52 +11,60 @@ import {
   FiTrendingUp,
 } from "react-icons/fi";
 
-const pages = [
+    const pages = [
   {
     title: "About Us",
-    description: "Learn more about VitalPath Wellness Consultancy.",
+    description:
+      "Learn more about VitalPath Wellness Consultancy and our commitment to healthier workplaces.",
     icon: <FiUsers />,
     path: "/commitment",
   },
   {
     title: "Our Services",
-    description: "Explore our comprehensive wellness solutions.",
+    description:
+      "Explore our comprehensive workplace wellness solutions. From preventive health programs to lifestyle management",
     icon: <FiBriefcase />,
     path: "/services",
   },
   {
     title: "Vision & Mission",
-    description: "Discover our purpose and long-term aspirations.",
+    description:
+      "Discover the purpose that drives VitalPath Wellness for healthier organizations and  meaningful workplace transformation",
     icon: <FiTarget />,
     path: "/vision-mission",
   },
   {
     title: "Value Proposition",
-    description: "See how our programs create measurable impact.",
+    description:
+      "See how our evidence-based wellness programs create measurable value for organizations",
     icon: <FiTrendingUp />,
     path: "/value-proposition",
   },
   {
     title: "Why Choose Us",
-    description: "Why organizations trust VitalPath Wellness.",
+    description:
+      "Discover why organizations trust VitalPath Wellness as their wellness partner",
     icon: <FiAward />,
     path: "/why-choose-us",
   },
   {
     title: "Organizations",
-    description: "Industries and sectors we proudly support.",
+    description:
+      "Explore the industries, businesses, institutions, organizations and sectors we proudly serve",
     icon: <FiLayers />,
     path: "/organizations",
   },
   {
     title: "Approach",
-    description: "Our collaborative approach to workplace wellness.",
+    description:
+      "Learn about our collaborative and client-centered consulting approach.",
     icon: <FiHeart />,
     path: "/consulting-approach",
   },
   {
     title: "Contact Us",
-    description: "Let's discuss your wellness goals.",
+    description:
+      "Get in touch with our team to discuss your organization's goals and wellness needs.",
     icon: <FiPhone />,
     path: "/contact",
   },
@@ -64,25 +72,23 @@ const pages = [
 
 const About = () => {
   return (
-    <section className="py-24 px-6 lg:px-16 bg-gradient-to-r from-green-100 to-blue-200">
-
+    <section 
+    id="about-section"
+    className="py-24 px-6 lg:px-16 bg-gradient-to-r from-green-100 to-blue-200">
       <div className="max-w-7xl mx-auto">
-
         <div className="text-center mb-16">
 
-          <p className="uppercase tracking-[4px] text-primary font-semibold">
-            Explore
-          </p>
-
-          <h2 className="text-4xl lg:text-5xl font-bold text-text mt-3">
+          <h2 className="text-4xl lg:text-5xl font-bold text-text">
             Our Wellness Solutions
           </h2>
+           <br/>
 
           <p className="mt-6 text-lg text-text-light max-w-3xl mx-auto leading-8">
             Explore our services, approach, and wellness solutions designed to
             help organizations build healthier, happier, and more productive
             workplaces.
           </p>
+          <br/>
 
         </div>
 
@@ -107,14 +113,14 @@ const About = () => {
                         hover:-translate-y-2
                         ">
 
-              <div 
+            <div 
               className="
                     group
                     bg-gradient-to-r from-primary to-secondary
                     rounded-3xl
                     p-10
                     lg:p-12
-                    min-h-[50px]
+                    min-h-40px]
                     flex
                     flex-col
                     justify-start
@@ -125,14 +131,12 @@ const About = () => {
                     hover:-translate-y-2
                     ">
                 {/* {page.icon} */}
-               
-              </div>
-
-            
-                 <h3 className="text-2xl lg:text-3xl font-bold text-text mb-6 leading-tight">
+              <h3 className="text-2xl lg:text-3xl text-center font-bold text-white mt-12 leading-tight">
                 {page.title}
               </h3>
-              <p className="text-text-light leading-7 mb-6">
+            </div>
+             
+              <p className="text-text leading-7 text-center">
                 {page.description}
               </p>
 
@@ -144,9 +148,8 @@ const About = () => {
           ))}
 
         </div>
-
       </div>
-
+      
     </section>
   );
 };
