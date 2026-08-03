@@ -18,12 +18,12 @@ const Hero = () => {
 
           <br/>
            
-           <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-secondary">
+           <h1 className="text-3xl lg:text-6xl font-bold leading-tight text-secondary">
             Guiding the path to holistic wellbeing
           </h1>
           
-          <br/>
-          <br/>
+        
+          
           <br/>
           
         {/*Buttons*/}
