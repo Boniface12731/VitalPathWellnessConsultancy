@@ -18,7 +18,7 @@ const Hero = () => {
 
           <br/>
            
-           <h1 className="text-5xl lg:text-6xl font-bold leading-tight text-secondary">
+           <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-secondary">
             Guiding the path to holistic wellbeing
           </h1>
           
