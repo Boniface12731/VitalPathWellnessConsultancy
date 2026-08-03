@@ -1,6 +1,6 @@
 import React from "react";
 import { FiCheckCircle } from "react-icons/fi";
-import valueImage from "../assets/images/stretcher.jpg";
+import valueImage from "../assets/images/happylady.jpg";
 
 const benefits = [
   "Enhanced workforce productivity",

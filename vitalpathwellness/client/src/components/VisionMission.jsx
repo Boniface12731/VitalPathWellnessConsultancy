@@ -1,6 +1,6 @@
 import React from "react";
 import { FiEye, FiTarget } from "react-icons/fi";
-import visionImage from "../assets/images/stretcher.jpg";
+import visionImage from "../assets/images/hero.jpg";
 
 const VisionMission = () => {
   return (
@@ -156,6 +156,7 @@ const VisionMission = () => {
             alt="Woman stretching"
             className="
               w-full
+              h-full
               max-w-sm
               lg:max-w-md
               rounded-[36px]

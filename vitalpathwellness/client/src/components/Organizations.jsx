@@ -1,6 +1,6 @@
 import React from "react";
 import { FiCheckCircle } from "react-icons/fi";
-import officeImage from "../assets/images/stretcher.jpg";
+import officeImage from "../assets/images/wellnessfour.png";
 
 const Organizations = () => {
   return (

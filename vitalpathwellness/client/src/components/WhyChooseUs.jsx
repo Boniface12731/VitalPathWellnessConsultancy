@@ -1,6 +1,6 @@
 import React from "react";
 import { FiCheckCircle } from "react-icons/fi";
-import chooseImage from "../assets/images/stretcher.jpg";
+import chooseImage from "../assets/images/wellnesstwo.png";
 
 const WhyChooseUs = () => {
   return (
