@@ -64,7 +64,7 @@ const Contact = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="font-normal hover:underline">
-              www.vitalpathwellness.com
+             https://www.vitalpathwellnessconsultancy.co.ke
             </a>
           </div>
 
