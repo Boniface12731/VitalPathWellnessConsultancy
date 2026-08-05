@@ -60,7 +60,7 @@ const Contact = () => {
           <div className="text-2xl lg:text-3xl">
             <span className="font-bold">Website:</span>{" "}
             <a
-              href="https://www.vitalpathwellness.com"
+              href="https://www.vitalpathwellnessconsultancy.co.ke"
               target="_blank"
               rel="noopener noreferrer"
               className="font-normal hover:underline">
