@@ -9,20 +9,17 @@ import stretcher from "../assets/images/stretcher.jpg";
 import logo from "../assets/images/logoslider.png";
 import crop from "../assets/images/crop.png";
 import wellnessone from "../assets/images/wellnessone.png";
-import wellnesstwo from "../assets/images/wellnessone.png";
-import wellnessthree from "../assets/images/wellnessone.png";
-import wellnessfour from "../assets/images/wellnessone.png";
-import wellnessfive from "../assets/images/wellnessone.png";
+import wellnesstwo from "../assets/images/wellnesstwo.png";
+import wellnessfour from "../assets/images/wellnessfour.png";
+import wellnessfive from "../assets/images/wellnessfive.png";
 
 const Hero = () => {
   const images = [
   wellnessfive,
   wellnessfour,
-  wellnessthree,
   wellnesstwo,
   wellnessone,
   crop,
-  logo,
   hero,
   meditation,
   happylady,
@@ -49,7 +46,7 @@ useEffect(() => {
         {/* Left Side */}
        <div className="lg:pr-8 pt-28 lg:pt-32">
 
-          <h1 className="text-5xl lg:text-6xl font-bold leading-tight text-primary">
+          <h1 className="text-5xl lg:text-5xl font-bold leading-tight text-primary">
             VitalPath Wellness Consultancy
           </h1>
 
@@ -113,6 +110,21 @@ useEffect(() => {
             </button>
         </div>
 
+                  <br/>
+         <div className="flex gap-3 mt-6">
+            {images.map((_, index) => (
+            <button
+            key={index}
+            onClick={() => setCurrentImage(index)}
+            className={`h-3 w-3 rounded-full transition-all ${
+            currentImage === index
+            ? "bg-primary w-8"
+            : "bg-white"
+            }`}
+            />
+            ))}
+          </div>
+
         </div>
 
         {/* Right Side */}
@@ -130,21 +142,6 @@ useEffect(() => {
             duration-700"/>
 
             <br/>
-
-            <div className="flex justify-center gap-3 mt-6">
-            {images.map((_, index) => (
-            <button
-            key={index}
-            onClick={() => setCurrentImage(index)}
-            className={`h-3 w-3 rounded-full transition-all ${
-            currentImage === index
-            ? "bg-primary w-8"
-            : "bg-white"
-            }`}
-            />
-            ))}
-            </div>
-
         </div>
 
         
