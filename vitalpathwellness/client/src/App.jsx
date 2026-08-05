@@ -15,6 +15,7 @@ import Services from './components/Services';
 import ValueProposition from './components/ValueProposition';
 import VisionMission from './components/VisionMission';
 import WhyChooseUs from './components/WhyChooseUs';
+import { Analytics } from "@vercel/analytics/react";
 
 const App = () => {
   return (
@@ -37,6 +38,7 @@ const App = () => {
                 <Route path="/why-choose-us" element={<WhyChooseUs />}/>
               </Routes>
        <Footer/>
+       <Analytics />
     </div>
   )
 }
