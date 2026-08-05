@@ -44,7 +44,7 @@ const Navbar = () => {
   </Link>
     <div>
         <h1 className="text-2xl font-bold text-primary">
-            Vital Path
+            VitalPath
         </h1>
         <p className="text-xs text-secondary">
             Wellness Consultancy
@@ -114,8 +114,22 @@ const Navbar = () => {
 
   </div>
 
+    <br/>
     {menuOpen && (
-    <div className="md:hidden bg-white shadow-lg px-6 py-6">
+    <div className="
+      md:hidden
+      fixed
+      top-[50px]
+      top-0
+      left-0
+      w-full
+      h-screen
+      bg-white
+      z-50
+      px-6
+      py-6
+      overflow-y-auto
+    ">
       <ul className="flex flex-col gap-5">
         {navLinks.map((link) => (
           <li key={link.label}>

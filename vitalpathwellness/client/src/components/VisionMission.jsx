@@ -1,6 +1,6 @@
 import React from "react";
 import { FiEye, FiTarget } from "react-icons/fi";
-import visionImage from "../assets/images/hero.jpg";
+import visionImage from "../assets/images/blacks.jpg";
 
 const VisionMission = () => {
   return (

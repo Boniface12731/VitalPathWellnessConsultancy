@@ -1,4 +1,5 @@
 import React from 'react'
+import valueImage from "../assets/images/zoezi.jpg";
 import {
   FiSearch,
   FiEdit3,
@@ -73,6 +74,16 @@ const Commitment = () => {
         via-blue-100
         to-blue-200">
 
+ <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
+     {/* Left Side */}
+            <div className="flex justify-center">
+             <img
+               src={valueImage}
+               alt="Employee Wellness"
+               className="w-full max-w-xl h-[600px] object-cover rounded-[32px] shadow-xl"/>
+            </div>
+
+      {/* Right Side */}
        <div className="max-w-7xl mx-auto flex flex-col gap-10">
         {/* Header */}
        <div className="max-w-7xl mx-auto flex flex-col gap-15">
@@ -93,9 +104,13 @@ const Commitment = () => {
             client's strategic objectives and workforce needs.
           </p>
         </div>
-
-
       </div>
+            
+  </div>
+
+
+       
+
     </section>
   )
 }

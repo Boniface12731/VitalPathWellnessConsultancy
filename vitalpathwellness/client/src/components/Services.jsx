@@ -67,10 +67,11 @@ const Services = () => {
                ))}
              </div>
 
-
+              <br/>
              <p className="text-primary font-semibold mt-10">
                Key Areas include:
              </p>
+              <br/>
              {/* Areas */}
              <div className="grid sm:grid-cols-2 gap-x-12 gap-y-6 mb-14">
                {areas.map((area, index) => (
