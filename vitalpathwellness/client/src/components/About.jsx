@@ -102,7 +102,7 @@ const About = () => {
                         group
                         bg-white
                         rounded-3xl
-                        min-h-[200px]
+                        min-h-[0px]
                         min-w-[250px]
                         p-10
                         lg:p-12
